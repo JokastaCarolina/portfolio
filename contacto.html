@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Jokasta Carolina Perdomo Martinez</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .contact-section {
+            padding: 60px 0;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 15px;
+        }
+
+        .social-icons a {
+            margin-right: 15px;
+            color: #007bff;
+            font-size: 1.5em;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            margin-bottom: 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        .section-nav {
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            margin-bottom: 30px;
+            position: sticky;
+            top: 50px;
+            z-index: 999;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .section-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .section-nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .section-nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        .section-nav ul li a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            <li><a href="curriculum.html">Currículum</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <nav class="section-nav">
+        <ul>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="container contact-section" id="contacto">
+        <h1 class="text-center mb-5">Contacto</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Envíame un Mensaje</h3>
+                <form action="your_backend_endpoint" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="tuemail@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" class="form-control" id="asunto" name="asunto"
+                            placeholder="Asunto del mensaje" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5"
+                            placeholder="Tu mensaje aquí..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3>Información de Contacto</h3>
+                <div class="contact-info">
+                    <p><strong>Dirección:</strong> Blas Parera 2975, Vicente Lopez, GBA</p>
+                    <p><strong>Teléfono:</strong> 1132287262 (Móvil)</p>
+                    <p><strong>Email:</strong> <a
+                            href="mailto:jokastacarolinaperdomo@gmail.com">jokastacarolinaperdomo@gmail.com</a></p>
+                </div>
+                <h3>Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jokasta-carolina-perdomo-martinez-14291b185" target="_blank"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                        <img src="https://cdn-icons-png.flaticon.com/24/174/174857.png" alt="LinkedIn" width="24"
+                            height="24">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
