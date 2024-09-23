@@ -3,95 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/icons/hembra.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
     <title>Jokasta Carolina Perdomo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        .navbar {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            margin-bottom: 30px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .navbar ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .navbar ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        .navbar ul li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 15px;
-            display: inline-block;
-        }
-        .navbar ul li a:hover {
-            background-color: #555;
-            border-radius: 5px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        header img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border: 2px solid #ddd;
-            margin-bottom: 15px;
-        }
-    </style>
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre-mi.html">Sobre Mí</a></li>
-             <li><a href="curriculum.html">Currículum</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-             <li><a href="contacto.html">Contacto</a></li>            
-        </ul>
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">Home - Pagina Principal</a>
+            <button class="navbar-toggler" id="navbar-toggler">
+                &#9776;
+            </button>
+            <div class="navbar-menu" id="navbar-menu">
+                <a href="index.html">Inicio</a>
+                <a href="sobre-mi.html">Sobre Mí</a>
+                <a href="curriculum.html">Currículum</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
     </nav>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#resumen">Resumen de Mí</a></li>
-            <li><a href="#aspectos">Aspectos Relevantes</a></li>
-        </ul>
-    </nav>
+    
     <header>
         <img src="img/JokastaPerdomo.jpeg" alt="Foto Autor">
         <h1>Jokasta Carolina Perdomo Martínez</h1>
     </header>
-    <section>
-        <h2>Java Developer</h2>
-        <p>Hola, soy desarrolladora desde el año 2020, actualmente estoy estudiando Licenciatura en gestión de tecnología de la información en UADE.</br></p>
-        <p>Ofrezco mis servicios de desarrollo de software</p>
-    </section>
-    <section id="aspectos">
-        <h2>Aspectos Relevantes de Mi Experiencia o Logros</h2>
+    
+    <div class="section-box">
+        <h3>Java Developer</h3>
+        <p>Como desarrolladora Java con experiencia y formación en gestión de tecnología de la información. Aquí te presento las razones por las que deberías considerar contratarme para tus proyectos:</p>
         <ul>
-            <li>Actualmente me encuentro trabajando en el Banco de la Provincia de Buenos Aires</li>
-            <li>Recibida del bootcamp de Java Developer del instituto de ADAITW</li>
-            <li>Entrega de mis proyectos en tiempo y forma</li>
+            <li><strong>Experiencia y Formación:</strong> He trabajado en diversos proyectos de desarrollo de software, adquiriendo experiencia práctica y conocimientos profundos en tecnologías Java y frameworks como Spring Boot y Hibernate.</li>
+            <li><strong>Enfoque en la Calidad:</strong> Me comprometo a entregar soluciones de software de alta calidad que cumplen con los estándares más exigentes.</li>
+            <li><strong>Soluciones Personalizadas:</strong> Entiendo que cada proyecto es único, por lo que ofrezco soluciones personalizadas que se ajustan a las necesidades específicas de cada cliente.</li>
         </ul>
-    </section>
+    </div>
 
-    <section id="resumen">
-        <h2>Resumen de mí</h2>
-        <p>Soy una persona comprometida en las metas definidas, responsable y resolutiva. Me gusta aprender de forma autodidacta con las mejores prácticas a traves de nuevos desafíos. </p>
-    </section>
+    <div class="section-box">
+        <h3>Aspectos Relevantes de Mi Experiencia</h3>
+        <ul>
+            <li>Actualmente me encuentro trabajando en el Banco de la Provincia de Buenos Aires.</li>
+            <li>Recibida del bootcamp de Java Developer del instituto de ADAITW.</li>
+            <li>Entrega de mis proyectos en tiempo y forma.</li>
+        </ul>
+    </div>
+
+    <div class="section-box">
+        <h3>Resumen de mí</h3>
+        <p>Soy una persona comprometida en las metas definidas, responsable y resolutiva. Me gusta aprender de forma autodidacta con las mejores prácticas a través de nuevos desafíos.</p>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Jokasta Carolina Perdomo.</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
 </body>
 </html>
+
