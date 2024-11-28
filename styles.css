@@ -47,7 +47,7 @@ title{
     padding: 10px; /* Espaciado interno del input */
     font-size: 1em; /* Tamaño de fuente del input */
     background-color:rgba(59, 59, 59, 0.8); /* Color de fondo de los inputs */
-    color: #333; /* Color del texto dentro de los inputs */
+    color:white; /* Color del texto dentro de los inputs */
 }
 
 .section-box.custom-form .form-control::placeholder {
